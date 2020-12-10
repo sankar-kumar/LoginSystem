@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+<style>
+    input[type=text],
+    select {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    input[type=password],
+    input[type=email],
+    input[type=phone] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    input[type=submit] {
+        width: 100%;
+        background-color: rgba(255, 167, 5, 0.815);
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: 1px solid black;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+        background-color: #ff5100;
+    }
+    
+    form {
+        width: 500px;
+        border: 1px solid;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: rgb(0, 233, 250);
+    }
+    
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+</style>
+
+<head>
+    <title>Register Form</title>
+</head>
+
+<body onload: 'document.form.email.focus()'>
+    <form action="insert.php" method="POST">
+        <table>
+            <tr>
+                <td>Name :</td>
+                <td><input type="text" name="username" required></td>
+            </tr>
+            <tr>
+                <td>Password :</td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td>Gender :</td>
+                <td><input type="radio" name="gender" value="m" required>Male <input type="radio" name="gender" value="f" required>Female </td>
+            </tr>
+            <tr>
+                <td>Phone no :</td>
+                <td><select name="phoneCode" required><option selected hidden value="">Select Code</option><option value="977">977</option><option value="978">978</option><option value="979">979</option><option value="973">973</option><option value="972">972</option><option value="974">974</option></select>
+                    <input type="phone" name="phone" required></td>
+            </tr>
+            <tr>
+                <td>Email :</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Submit" onclick="ValidateEmail(document.form.email)"></td>
+            </tr>
+            <script src=" emailverify.js "></script>
+        </table>
+    </form>
+</body>
+
+</html>
