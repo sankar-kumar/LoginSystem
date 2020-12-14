@@ -1,11 +1,1 @@
-learn html form attributes
-learn how to connect php with mysql
-learn to create a database and add details
-learn JAVASCRIPT
-learn AJAX
-PHP7 ADVANCED AND MySQL
-
-git commands:git clone()
-git add
-git commit
-git push
+This application is developed with HTML5, CSS3 and PHP7. It's a small try to establish session, database connection and add some new data in a database. This is for freshers who are started learning Web development.
